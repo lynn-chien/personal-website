@@ -1,0 +1,330 @@
+@font-face {
+    font-family: Grandiflora;
+    src: url(../fonts/grandiflora.ttf);
+} 
+
+@font-face {
+    font-family: Montserratt;
+    src: url(../fonts/montserratt.ttf);
+} 
+
+@font-face {
+    font-family: MontReg;
+    src: url(../fonts/montreg.ttf);
+}
+
+body {
+    background-color: rgb(206, 243, 255);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body.fade-in {
+    opacity: 1;
+}
+
+.back-button {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.back-button img {
+    width: 10%;
+    height: auto;
+}
+
+.back-button:hover {
+    opacity: 0.6;
+}
+
+.main {
+    font-family: "Grandiflora";
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.main h1 {
+    font-size: 5em;
+    color: #504952;
+    text-align: center;
+    margin-bottom: 100px;
+    transition: color 0.5s;
+}
+
+.main h1:hover {
+    color: #de6ca3;
+}
+
+#web-dev {
+    background-color: rgb(183, 236, 252); /* Change this to the desired color for web dev section */
+    height: 550px; /* Adjust the height as needed */
+}
+
+#data-science {
+    background-color: rgb(162, 233, 255); /* Change this to the desired color for web dev section */
+    height: 550px; /* Adjust the height as needed */
+}
+
+#computer-science {
+    background-color: rgb(144, 229, 255); /* Change this to the desired color for web dev section */
+    height: 550px; /* Adjust the height as needed */
+}
+
+.web-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items vertically */
+    text-align: center;
+    align-items: center;
+    gap: 20px; /* Space between the subtitle and the image */
+}
+
+.web-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.web-container h2 {
+    font-family: "Montserratt";
+    color: #756978;
+    margin-bottom: 40px;
+}
+
+.web-container img {
+    width: 8%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 300px); /* Fixed width for each column */
+    justify-content: center; /* Center the grid */
+    gap: 50px; /* Space between grid items */
+    /* Other styles... */
+}
+
+
+.project-item {
+    background-color: #f1f1f1; /* Example background color */
+    padding: 20px;
+    text-align: center; /* Center the content */
+    border-radius: 10px; /* Optional rounded corners */
+    min-height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+    
+.project-item:hover {
+    background-color: #fff2f8;
+    transition: outline 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+.project-item img {
+    width: 20%; /* Adjust icon size as needed */
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 5px; /* Space below the icon */
+}
+
+.project-item h3 {
+    margin-bottom: 10px; /* Space below the title */
+    font-family: "Montreg";
+    font-weight: 1000;
+    font-size: 1.5em;
+    color: #504952;
+}
+
+.project-item p {
+    font-family: "MontReg";
+    color: #756978;
+}
+
+.project-item a {
+    font-family: "MontReg";
+    color: #6cabde;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.project-item a:hover {
+    color: #de6ca3;
+}
+
+.design-gallery {
+    margin-top: 40px;
+    text-align: center; /* Center-align the title and content */
+}
+
+.design-gallery h2 {
+    margin-bottom: 20px;
+    font-family: "Montreg";
+}
+
+.design-gallery .design-item {
+    margin-bottom: 20px;
+    /* Style for individual design items (you can use flexbox or grid here) */
+}
+
+.design-gallery .design-item img {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.contact-form label, .contact-form input, .contact-form input[type=submit] {
+    /* Individual styles for form elements */
+    margin: 10px 0; /* Example spacing */
+}
+
+.form-group {
+    margin-bottom: 15px;
+  }
+  
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #756978;
+}
+
+input[id="name"],
+textarea {
+  width: 10%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[id="message"],
+textarea {
+  width: 20%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+    font-family: "MontReg";
+    background-color: rgb(162, 233, 255);
+    color: #504952;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+input[type="submit"]:hover {
+    background-color:rgb(144, 229, 255);
+  }
+
+.contact-form h3 {
+    font-family: "MontReg";
+    color: #504952;
+}
+
+.contact-form label {
+    font-family: "MontReg";
+}
+
+.contact-form {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+.designs h3 {
+    font-family: "Grandiflora";
+    text-align: center;
+    font-size: 4em;
+    margin-top: 100px;
+    transition: color 0.5s;
+}
+
+.designs h3:hover {
+    color: #66c23e;
+}
+
+.designs h4 {
+    font-family: "MontReg";
+    text-align: center;
+    text-decoration: none;
+    color:#504952;
+}
+
+.valorant {
+    margin-top: 10px;
+}
+
+.misc {
+    margin-top: 30px;
+}
+
+.image-carousel {
+    margin: 0 auto;
+    margin-top: 80px;
+    max-width: 70%;
+    height: auto;
+    position: relative; /* Ensure relative positioning */
+    padding: 0 50px; /* Add padding to make space for arrows */
+}
+
+.image-carousel img {
+    max-width: 70%; /* Ensures image is not larger than its container */
+    max-height: auto; /* Adjust this value based on your requirement */
+    display: block; /* Removes any extra space below the image */
+    margin: 0 auto; /* Center the image in its container */
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.image-carousel img:hover, h4:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.slick-prev, .slick-next {
+    filter: invert(50%) sepia(100%) saturate(310%) hue-rotate(160deg) brightness(100%) contrast(120%);
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -25px; /* Adjust this value based on your carousel's design */
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+    .project-item {
+        max-width: 100%; /* Adjust the width for small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .image-carousel {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-carousel {
+        max-width: 100%;
+    }
+}
